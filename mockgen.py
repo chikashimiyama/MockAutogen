@@ -19,7 +19,7 @@ constructorSignature = sys.argv[1]
 splitSignature = constructorSignature.split("(")
 className = splitSignature[0]
 constructorParams = splitSignature[1].translate({ord(c): None for c in ');\n'})
-splitParams = constructorParams.split(", ")
+splitParams = constructorParams.split(",")
 
 print("ClassName:" + className)
 argCount = len(splitParams);
